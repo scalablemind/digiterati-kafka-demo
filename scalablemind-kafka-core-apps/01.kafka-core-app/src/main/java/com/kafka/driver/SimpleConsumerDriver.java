@@ -8,7 +8,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 
-public class SimpleConsumerDriverr {
+public class SimpleConsumerDriver {
 	
 	
 	private static Properties createProducerProperties(String groupName) {
