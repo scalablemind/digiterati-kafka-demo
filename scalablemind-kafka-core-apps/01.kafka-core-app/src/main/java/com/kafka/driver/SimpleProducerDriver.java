@@ -18,7 +18,7 @@ public class SimpleProducerDriver {
 		
 		KafkaProducer<String, String> producerObj = new KafkaProducer<String, String>(kafkaProperties);
 		try {
-			producerObj.send(new ProducerRecord<String, String>("simpleproducerdrivertopic", "Knowledge should be free"+number));
+			producerObj.send(new ProducerRecord<String, String>("simpledrivertopic", "Knowledge should be free"+number));
 		} catch(Exception ex) {
 			ex.printStackTrace();
 		} finally {
