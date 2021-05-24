@@ -8,5 +8,6 @@
   <description>scalablemind-kafka-demo</description>
   <modules>
   	<module>scalablemind-kafka-core-apps</module>
+  	<module>02.kafka-spring-boot</module>
   </modules>
 </project>
