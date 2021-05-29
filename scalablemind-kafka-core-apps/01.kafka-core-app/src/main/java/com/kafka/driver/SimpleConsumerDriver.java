@@ -11,7 +11,7 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 public class SimpleConsumerDriver {
 	
 	
-	private static Properties createProducerProperties(String groupName) {
+	private static Properties createConsumerProperties(String groupName) {
 		Properties properties = new Properties();
         properties.put("bootstrap.servers", "localhost:9092");
         properties.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
@@ -24,7 +24,7 @@ public class SimpleConsumerDriver {
 	public static void main(String[] args) {
 		
 		String groupName = "cg1";
-		KafkaConsumer<String, String> kafkaConsumer1 = new KafkaConsumer<String, String>(createProducerProperties(groupName));
+		KafkaConsumer<String, String> kafkaConsumer1 = new KafkaConsumer<String, String>(createConsumerProperties(groupName));
 		
 		readAndPrint(kafkaConsumer1,groupName);
 	}
